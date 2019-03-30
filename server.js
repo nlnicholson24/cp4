@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({
   extended: false
 }));
 
-app.use(express.static('public'));
+//app.use(express.static('public'));
 
 const mongoose = require('mongoose');
 
@@ -74,4 +74,4 @@ app.put('/api/scriptures/:id', async (req, res) => {
 });
 
 
-app.listen(8000, () => console.log('Server listening on port 8000!'));
+app.listen(8100, () => console.log('Server listening on port 8100!'));
