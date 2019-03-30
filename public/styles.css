@@ -1,0 +1,37 @@
+html {
+  text-align: center;
+}
+
+body {
+  background-color: #ffcccc;
+}
+
+h1 {
+  text-align: center;
+}
+
+.actionHeader {
+  text-align: center;
+}
+
+textarea {
+  width: 40%;
+  height: 100px;
+  margin-top: 10px;
+}
+
+p {
+  width:30%;
+  align: center;
+  margin-left: 35%;
+}
+
+.scripture-gallery {
+  text-align: center;
+}
+
+.scripture-gallery p {
+  width:50%;
+  text-align: center;
+  margin-left: 25%;
+}

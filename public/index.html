@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+  <title>Scripture Notes</title>
+</head>
+
+<body>
+
+
+      <h1>Scripture Notes</h1>
+
+  <div class="actionHeader">
+  <h2>Add Notes to a Favorite Scripture Passage</h2>
+  <div id="app" class="content">
+
+    <div class="add">
+      <div class="form">
+        <input v-model="verse" placeholder="Scripture reference"> <br />
+        <textarea v-model="passage" placeholder="Text of the passage"></textarea> <br />
+        <textarea v-model="notes" placeholder="Notes and Impressions"></textarea> <br />
+        <button @click="upload">Upload</button>
+      </div>
+    </div>
+
+    <div class="upload" v-if="addVerse">
+      <h2>{{addVerse.verse}}</h2>
+      <p>{{addVerse.passage}}</p>
+      <p>{{addVerse.notes}}</p>
+    </div>
+
+    </div>
+  </div>
+
+  </div>
+  <div class="footer">
+    <a href="/collection.html">View My Favorite Scriptures</a>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.7/vue.js" integrity="sha256-g+Q8DFAmG5+eyRPSydX0LY4TfjsL11XSDrIGerbbEdA=" crossorigin="anonymous"></script>
+  <script src="/script.js"></script>
+</body>
+
+</html>
